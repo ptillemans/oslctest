@@ -1,0 +1,17 @@
+[package]
+name = "oslctest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.66"
+axum = { version = "0.6.0", features = ["json", "macros", "tokio"] }
+config = "0.13.2"
+config-derive = { version = "0.7.0", features = ["toml", "env"] }
+reqwest = { version = "0.11.13", features = ["json"] }
+rio_api = "0.7.1"
+rio_xml = "0.7.3"
+serde = { version = "1.0.148", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
