@@ -699,6 +699,7 @@ dependencies = [
  "rio_api",
  "rio_xml",
  "serde",
+ "serde_json",
  "tokio",
 ]
 
