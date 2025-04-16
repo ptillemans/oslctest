@@ -121,8 +121,8 @@ async fn get_authorization_url(cfg: &Conf) -> Result<Url> {
             url.context("authorizationURI not found")
         },
         _ => {
-            println!("Error occured");
-            bail!("error getting access token")
+            println!("Error occured: {:?}", result);
+            bail!("error getting authentication url")
         }
     }
 }
